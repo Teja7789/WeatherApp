@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"></link>
+    <title>Weather App</title>
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <div class="container">
+        <div class="weather" id="weather">
+            <div class="weather-gradient"></div>
+            <div class="weather-information">
+                <div class="weather-day">Wednesday</div>
+                <div class="weather-date">16 Oct 2021</div>
+                <div class="weather-location">
+                    <i class="fas fa-map-marker-alt fa-sm"></i>
+                    <span class="city">Mumbai, IN</span>
+                </div>
+                <div class="weather-type">
+                    <div class="weather-temperature">32&deg;C</div>
+                    <div class="weather-description">Smoke</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="information" id="information">
+           <div class="change-location">
+                <form class="input-group" onsubmit="getWeatherInformation(event)"> 
+                    <input type="text" placeholder="EnterLocation" required/>
+                    <button class="button" type="submit">
+                        <i class="fas fa-search fa-1x"></i>
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
